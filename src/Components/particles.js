@@ -19,11 +19,11 @@ const particles = () => {
       loaded={particlesLoaded}
       options={{
         
-        fpsLimit: 60,
+        fpsLimit: 61,
         interactivity: {
           events: {
             onClick: {
-              enable: false,
+              enable: true,
               mode: "push",
             },
             onHover: {
@@ -52,23 +52,17 @@ const particles = () => {
           color: {
             value: "#3d3d3d",
           },
-          links: {
-            color: "#ffffff",
-            distance: 150,
-            enable: true,
-            opacity: 0.5,
-            width: 1,
-          },
+          
           collisions: {
-            enable: true,
+            enable: false,
           },
           move: {
             direction: "top",
             enable: true,
             outMode: "bounce",
-            random: true,
-            speed: 2,
-            straight: true,
+            random: false,
+            speed: 1,
+            straight: false,
           },
           number: {
             density: {
@@ -81,7 +75,7 @@ const particles = () => {
             value: 0.5,
           },
           shape: {
-            type: "triangle",
+            type: "square",
           },
           size: {
             random: true,
