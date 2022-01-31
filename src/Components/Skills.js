@@ -36,31 +36,31 @@ const data = [
     {
         image:"images/Sass.png",
         name:'Sass',
-        id:"5"
+        id:"6"
     }
     ,
     {
         image:"images/Styled.png",
         name:'Styled-Components',
-        id:"6"
+        id:"7"
     }
     ,
     {
         image:"images/Python.png",
         name:'Python',
-        id:"10"
+        id:"8"
     }
     ,
     {
         image:"images/Php.png",
         name:'PHP',
-        id:"7"
+        id:"9"
     }
     ,
     {
         image:"images/Github.png",
         name:'Github',
-        id:"8"
+        id:"10"
     }
     ,
     {
@@ -72,7 +72,7 @@ const data = [
     {
         image:"images/Figma.png",
         name:'Figma',
-        id:"11"
+        id:"12"
     }
     
     
