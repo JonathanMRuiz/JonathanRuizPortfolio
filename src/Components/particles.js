@@ -18,11 +18,7 @@ const particles = () => {
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
-        background: {
-          color: {
-            value: "#d3d3d3",
-          },
-        },
+        
         fpsLimit: 120,
         interactivity: {
           events: {
@@ -72,12 +68,12 @@ const particles = () => {
             outMode: "bounce",
             random: true,
             speed: 2,
-            straight: false,
+            straight: true,
           },
           number: {
             density: {
               enable: true,
-              area: 1200,
+              area: 900,
             },
             value: 80,
           },

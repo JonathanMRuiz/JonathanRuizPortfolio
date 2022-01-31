@@ -64,7 +64,7 @@ const data = [
     }
     ,
     {
-        image:"images/git.png",
+        image:"images/Git.png",
         name:'Git',
         id:"11"
     }

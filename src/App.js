@@ -6,6 +6,7 @@ import About from './Components/About';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import Skills from './Components/Skills';
+import Particles from './Components/particles';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
   return (
     
       <div className="App">
+          <Particles/>
           <Navbar/>
         
           <Home/>
