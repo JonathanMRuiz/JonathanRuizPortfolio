@@ -35,8 +35,8 @@ const particles = () => {
           modes: {
             bubble: {
               distance: 400,
-              duration: 2,
-              opacity: 0.8,
+              duration: 1,
+              opacity: 0.2,
               size: 40,
             },
             push: {
@@ -57,7 +57,7 @@ const particles = () => {
             enable: false,
           },
           move: {
-            direction: "top",
+            direction: "bottom",
             enable: true,
             outMode: "bounce",
             random: false,
@@ -79,7 +79,7 @@ const particles = () => {
           },
           size: {
             random: true,
-            value: 10,
+            value: 4,
           },
         },
         detectRetina: true,

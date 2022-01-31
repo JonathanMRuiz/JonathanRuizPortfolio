@@ -41,9 +41,9 @@ const Contact = () => {
             <h1>Contact</h1>
           </div>
           
-        
+          <i className="nes-kirby"></i>
           
-          <form className="form" onSubmit={sendEmail}>
+          <form id="form"className="form" onSubmit={sendEmail}>
 
           <div className="nes-field">
             <label>Your name</label>

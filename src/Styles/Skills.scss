@@ -37,14 +37,15 @@
 }
 
 .skills{
-   
+   height:100vh;
+    background:lightgray;
     display:flex;
     justify-content:center;
    
     align-items:center;
     flex-wrap:wrap;
     
-    margin-bottom:250px;
+    
 
 }
 .order{
@@ -60,7 +61,6 @@
 @media screen and (max-width:768px){
     .skills{
       height:100%;
-      margin-left:50px;
-    
+         
     }
   }

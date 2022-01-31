@@ -67,12 +67,17 @@ const Casette = () => {
         
     </div>
 
-    <div className="nes-container is-rounded">
+   
+ 
+
+    <div className="nes-container  is-rounded">
       <p>{item.title}</p>
       <span>{item.description}</span>
       <a href={item.link} target="_blank" rel="noreferrer"><span>To Visit</span></a>
      
     </div>
+    
+    
     
     <span></span>
     </div>

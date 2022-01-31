@@ -32,18 +32,21 @@ const About = () => {
       <div className="mid">
       
       <div className="nes-container is-dark is-centered with-title ">
+        
         <p className="title">My dates</p>
               <div className="dates">
                   <img className="nes-avatar is-rounded is-medium" alt="..." src={"images/location.jpg"}/>
-                  <span className="paraDates">Argentina, Morón, Buenos Aires</span>
+                  <span className="paraDates">Argentina, Moron, Buenos Aires</span>
                   <img className="nes-avatar is-rounded is-medium" alt="..." src="images/arroba.jpg"/>
                   <span className="paraDates">ruizmjonathan@hotmail.com</span>
                   <img className="nes-avatar is-rounded is-medium" alt="..." src="images/phone.jpg"/>
                   <span className="paraDates">(+54)11-66409685</span>    
               </div>
       </div>
+      
       </div>
-    
+      
+
       
       </div>
     </div>
