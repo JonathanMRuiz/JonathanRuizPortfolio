@@ -1,0 +1,33 @@
+.contact{
+    display:flex;
+    align-items:center; 
+    justify-content:center;
+    
+    .form{
+        display:flex;
+        justify-content:center;
+        flex-direction:column;
+        height:80%;
+        align-items:center;
+
+    }
+
+    textarea{
+        resize:none;
+        height:25vh;
+    }
+
+    button{
+        margin-top:25px;
+        padding: 1rem 3rem;
+        width:50%;
+    }
+   
+
+}
+.titleContact{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:30px;
+   }
