@@ -29,6 +29,12 @@ const data = [
     ,
     {
         image:"images/Boostrap.png",
+        name:'Boostrap',
+        id:"5"
+    }
+    ,
+    {
+        image:"images/Sass.png",
         name:'Sass',
         id:"5"
     }
@@ -42,8 +48,34 @@ const data = [
     {
         image:"images/Python.png",
         name:'Python',
+        id:"10"
+    }
+    ,
+    {
+        image:"images/Php.png",
+        name:'PHP',
         id:"7"
     }
+    ,
+    {
+        image:"images/Github.png",
+        name:'Github',
+        id:"8"
+    }
+    ,
+    {
+        image:"images/git.png",
+        name:'Git',
+        id:"11"
+    }
+    ,
+    {
+        image:"images/Figma.png",
+        name:'Figma',
+        id:"11"
+    }
+    
+    
 ]
 const Skills = () => {
   return (
