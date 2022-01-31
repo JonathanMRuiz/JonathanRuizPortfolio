@@ -26,7 +26,7 @@ const data = [
     },
     
 ]
-const Cartucho = () => {
+const Casette = () => {
   return (
     
     <>
@@ -67,7 +67,7 @@ const Cartucho = () => {
         
     </div>
 
-    <div class="nes-container is-rounded">
+    <div className="nes-container is-rounded">
       <p>{item.title}</p>
       <span>{item.description}</span>
       <a href={item.link} target="_blank" rel="noreferrer"><span>To Visit</span></a>
@@ -84,4 +84,4 @@ const Cartucho = () => {
   );
 };
 
-export default Cartucho;
+export default Casette;

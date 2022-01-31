@@ -33,36 +33,42 @@ const Contact = () => {
     }
 
   return (
-    <div className="col-12 col-sm-12 col-md-12" id="contact-section">
-      
-      <div className="titleContact">
-        <h1>Contact</h1>
-      </div>
-      
-    <div className="contact">
-      
-      <form className="form" onSubmit={sendEmail}>
+    <div className="contact" id="contact-section">
+      <div className="container">
+        <div className="col-12 col-sm-12 col-md-12" id="contact-section">
+          
+          <div className="titleContact">
+            <h1>Contact</h1>
+          </div>
+          
+        
+          
+          <form className="form" onSubmit={sendEmail}>
 
-      <div className="nes-field">
-        <label>Your name</label>
-        <input type="text" id="name_field" className="nes-input" value={name} onChange={(e)=> setName(e.target.value)} required/>
-      </div>
-      <div className="nes-field">
-        <label >Your email</label>
-        <input type="email" id="email_field" className="nes-input" value={email} onChange={(e)=> setEmail(e.target.value)} required/>
-      </div>
-      <div className="nes-field">
-      <label>Message</label>
-      <textarea id="textarea_field" className="nes-textarea" value={message} onChange={(e)=> setMessage(e.target.value)}/>
-      </div>
-      <button type="submit" className="nes-btn is-success">Send Message</button>
+          <div className="nes-field">
+            <label>Your name</label>
+            <input type="text" id="name_field" className="nes-input" value={name} onChange={(e)=> setName(e.target.value)} required/>
+          </div>
+          <div className="nes-field">
+            <label >Your email</label>
+            <input type="email" id="email_field" className="nes-input" value={email} onChange={(e)=> setEmail(e.target.value)} required/>
+          </div>
+          <div className="nes-field">
+          <label>Message</label>
+          <textarea id="textarea_field" className="nes-textarea" value={message} onChange={(e)=> setMessage(e.target.value)}/>
+          <div className="btnContainer">
+            <button type="submit" className="nes-btn is-success">Send Message</button>
+          </div>
+          </div>
+          
+        
+        </form>
+
+      
+
     
-    </form>
-
-    
-
-  
-  </div>
+      </div>
+    </div>
   </div>
   );
 };

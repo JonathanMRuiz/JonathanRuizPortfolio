@@ -1,11 +1,13 @@
 import '../Styles/Navbar.scss'
 
+
+import { Link } from 'react-scroll'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useState, useEffect } from 'react'
 
 
-
 const Navbar = () => {
+
 
   const [toggleMenu, setToggleMenu ] = useState(false);
 
@@ -31,73 +33,20 @@ const Navbar = () => {
 
   return (
     
+    <>
+ 
+    
     <nav>
     {(toggleMenu || screenWidth > 500) && (
     <div className="list">
-      
-      <a href="home"
-        className="items"
-                  onClick={(e) => {
-                    toggleNav()
-                    e.preventDefault();
-                    document
-                      .getElementById("home-section")
-                      .scrollIntoView();
-                  }}>Home</a>
-      
-
     
-        <a href="about"
-        className="items"
-                  onClick={(e) => {
-                    toggleNav()
-                    e.preventDefault();
-                    document
-                      .getElementById("about-section")
-                      .scrollIntoView();
-                  }}>About</a>
+        <Link activeClass="active" to="home-section" spy={true} smooth={true} offset={0} duration={700} onClick={toggleNav}>Home</Link>
+        <Link activeClass="active" to="about-section" spy={true} smooth={true} offset={-50} duration={700} onClick={toggleNav}>About</Link>
+        <Link activeClass="active" to="skills-section" spy={true} smooth={true} offset={-50} duration={700} onClick={toggleNav}>Skills</Link>
+        <Link activeClass="active" to="projects-section" spy={true} smooth={true} offset={-50} duration={700} onClick={toggleNav}>Projects</Link>
+        <Link activeClass="active" to="contact-section" spy={true} smooth={true} offset={-50} duration={700} onClick={toggleNav}>Contact</Link>
    
-
-      
-        <a href="skills"
-        className="items"
-                  onClick={(e) => {
-                    toggleNav()
-                    e.preventDefault();
-                    document
-                      .getElementById("skills-section")
-                      .scrollIntoView();
-                  }}>Skills</a>
-     
-
-      
-        <a href="projects"
-        className="items"
-                  onClick={(e) => {
-                    toggleNav()
-                    e.preventDefault();
-                    document
-                      .getElementById("projects-section")
-                      .scrollIntoView();
-                  }}>Projects</a>
-      
-
-      
-        <a href="contact"
-        className="items"
-                  onClick={(e) => {
-                    toggleNav()
-                    e.preventDefault();
-                    document
-                      .getElementById("contact-section")
-                      .scrollIntoView();
-                  }}>Contact</a>
-     
-      
-    
-      
-      
-
+       
     </div>
     )}
 
@@ -108,7 +57,7 @@ const Navbar = () => {
       
       </button>
   </nav>
-
+  </>
 
   )
 };

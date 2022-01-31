@@ -1,7 +1,6 @@
 .contact{
-    display:flex;
-    align-items:center; 
-    justify-content:center;
+    height:100vh;
+ 
     
     .form{
         display:flex;
@@ -17,6 +16,12 @@
         height:25vh;
     }
 
+    .btnContainer{
+        display:flex;
+        align-items:center;
+        justify-content:center
+    }
+
     button{
         margin-top:25px;
         padding: 1rem 3rem;
@@ -26,8 +31,23 @@
 
 }
 .titleContact{
+   
     display:flex;
     align-items: center;
     justify-content: center;
     margin-bottom:30px;
    }
+
+
+   @media screen and (max-width:768px){
+    .contact{
+      height:100%;
+      margin-top:25vh;
+      
+
+      
+    }
+    .titleContact{
+        margin-bottom:10vh;
+    }
+  }

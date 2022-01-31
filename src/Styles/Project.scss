@@ -1,0 +1,26 @@
+.projects{
+    height:100vh;
+   
+}
+
+
+.titleProject{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.casette{
+    display:flex;
+}
+
+@media screen and (max-width:768px){
+    .projects{
+        height:100%;
+    }
+    .casette{
+        flex-direction: column;
+        margin-left:25px;
+    }
+    
+}

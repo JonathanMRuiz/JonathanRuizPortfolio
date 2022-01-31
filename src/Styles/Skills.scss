@@ -3,23 +3,28 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    margin-bottom:30px;
-    
+
+}
+.icon{
+
+    font-size:50px;
     
 }
 
 .imageContainer{
+    background:rgba(112, 109, 109, 0.356);
     display:flex;
     justify-content:center;
     align-items:center;
     flex-direction:column;
-    border: 5px solid transparent;
-    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%,   #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
     border-image-slice: 1;
-    height: 200px;
-    margin: 20px auto;
-    width: 200px;
-    color:white;
+    height: 150px;
+    margin: 15px auto;
+    width: 180px;
+    color:#000;
+
 
    
 
@@ -35,21 +40,27 @@
    
     display:flex;
     justify-content:center;
+   
     align-items:center;
     flex-wrap:wrap;
-
-    img{
     
-       
-        border-radius: 15px;
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
-        &:hover {
-            -webkit-filter: grayscale(0);
-            filter: grayscale(0);
-        }
-    }
+    margin-bottom:250px;
+
+}
+.order{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    
 }
 
+
+
+
+@media screen and (max-width:768px){
+    .skills{
+      height:100%;
+      margin-left:50px;
+    
+    }
+  }

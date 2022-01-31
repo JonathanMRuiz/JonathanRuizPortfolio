@@ -1,106 +1,121 @@
 import '../Styles/Skills.scss';
 import React from 'react';
 
-const data = [
+import { FaReact,FaJs,FaHtml5,FaCss3Alt,FaPython,FaDatabase } from 'react-icons/fa';
+import { DiPhp } from "react-icons/di";
+import {FaFigma,FaGithub, FaBootstrap, FaSass} from 'react-icons/fa';
+import { SiStyledcomponents } from "react-icons/si";
+import { DiScrum } from "react-icons/di";
+
+
+const data =[
     {
-        image:"images/React.png",
-        name:'React',
+        image:<FaReact/>,
+        name:"React",
         id:"1"
-    }
-    ,
+    },
     {
-        image:'images/Javascript.png',
-        name:'Javascript',
+        image:<FaJs/>,
+        name:"Java-Script",
         id:"2"
-    }
-    ,
+    },
+    {
+        image:<FaHtml5/>,
+        name:"HTML5",
+        id:"3"
+    },
+    {
+        image:<FaCss3Alt/>,
+        name:"CSS3",
+        id:"4"
+    },
+    
+   
+    {
+        image:<DiPhp/>,
+        name:"PHP",
+        id:"5"
+    },
+    {
+        image:<FaPython/>,
+        name:"Python",
+        id:"6"
+    },
+    
     
     {
-        image:"images/Html.png",
-        name:'HTML5',
-        id:"3"
-    }
-    ,
-    {
-        image:"images/css3.png",
-        name:'CSS3',
-        id:"4"
-    }
-    ,
-    {
-        image:"images/Boostrap.png",
-        name:'Boostrap',
-        id:"5"
-    }
-    ,
-    {
-        image:"images/Sass.png",
-        name:'Sass',
-        id:"6"
-    }
-    ,
-    {
-        image:"images/Styled.png",
-        name:'Styled-Components',
+        image:<FaDatabase/>,
+        name:"Database",
         id:"7"
-    }
-    ,
+    },
+
     {
-        image:"images/Python.png",
-        name:'Python',
+        image:<FaFigma/>,
+        name:"Figma",
         id:"8"
-    }
-    ,
+    },
     {
-        image:"images/Php.png",
-        name:'PHP',
+        image:<FaGithub/>,
+        name:"GitHub",
+        id:"13"
+    },
+    {
+        image:<SiStyledcomponents/>,
+        name:"Styled-component",
         id:"9"
-    }
-    ,
+    },
+    
     {
-        image:"images/Github.png",
-        name:'Github',
+        image:<FaBootstrap/>,
+        name:"Bootstrap",
         id:"10"
-    }
-    ,
+    },
     {
-        image:"images/Git.png",
-        name:'Git',
+        image:<FaSass/>,
+        name:"Sass",
         id:"11"
-    }
-    ,
+    },
     {
-        image:"images/Figma.png",
-        name:'Figma',
+        image:<DiScrum/>,
+        name:"Scrum",
         id:"12"
     }
+    
     
     
 ]
 const Skills = () => {
   return (
-      
-      <div className="col-12 col-sm-12 col-md-12" id="skills-section">
-          <div className="titleSkill">
-                <h1>Skills</h1>
-            </div>
-          
-            <div className="skills">
-            
-            {data.map(item => (
-
-             <ul key={item.id}>
-                <div className="imageContainer">
+      <div className="skills" id="skills-section">
+    <div className="container">
+        <div className="row">
+            <div className="col-12 col-sm-12 col-md-12" >
+                <div className="titleSkill">
+                        <h1>Skills</h1>
+                    </div>
                 
-                    <img className="nes-avatar is-large" alt={item.name} src={item.image} />
-                    <span className="paraSkill">{item.name} </span>
                     
+                    <div className="order">
+                    {data.map(item => (
+
+                    <ul key={item.id}>
+                        <div className="imageContainer">
+                        
+                        
+                            <span className="icon"> {item.image} </span>
+                            <span className="paraSkill">{item.name} </span>
+                            
+                            
+                    </div>
                     
-            </div>
-            </ul>
-            
-            ))}
+                    </ul>
+                    
+                    ))}
+
+                </div>  
+                </div>
         </div>
+      </div>
       </div>
      
   )

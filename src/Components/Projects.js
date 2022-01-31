@@ -1,26 +1,20 @@
-import '../Styles/Projects.scss'
-import Cartucho from './Cartucho';
-
+import React from 'react';
+import '../Styles/Project.scss'
+import Casette from './Casette'
 const Projects = () => {
   return (
-    <div className="projects">
-      <div className="col-12 col-md-12 col-sm-12" id="projects-section">
-        
-          
+    <div className="projects" id="projects-section">
+      <div className="container">
+        <div className="col-lg-12">
           <div className="titleProject">
-            <h1>Projects</h1>
+            <h1>Project</h1>
           </div>
-          
-
-          <div className="center">
-            <Cartucho />
+          <div className="casette">
+            <Casette/>
           </div>
-
         </div>
       </div>
-     
-    )
-  ;
+  </div>);
 };
 
 export default Projects;

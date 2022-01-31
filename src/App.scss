@@ -1,13 +1,12 @@
 
 
-.App{
 
-   
- 
-}
 
 body {
-	background: linear-gradient(-50deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	margin:0;
+	padding:0;
+	top:0;
+	background: linear-gradient(-50deg, #a242cfc7, #f7731cf8, #23a5d596, #23d5aba9);
 	background-size: 400% 400%;
 	animation: gradient 5s ease infinite;
 	z-index:100;

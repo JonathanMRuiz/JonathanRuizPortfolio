@@ -1,3 +1,7 @@
+.about{
+   height:100vh;
+   width:100%;
+}
 .top{
    
     margin-bottom:15px;
@@ -44,13 +48,22 @@
 
 
 
-@media (max-width: 768px){
-    
-    .dates{
-        height:100%;
+@media screen and (max-width:768px){
+    .about{
+      height:100%;
+      margin-left:15px;
     }
+
     .about-content{
-        height:100%;
+        padding:0;
     }
-    
+
+    .dates{
+
+    .paraDates{
+        
+        font-size:10px;
+        
+    }
 }
+  }

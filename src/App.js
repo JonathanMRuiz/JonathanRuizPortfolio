@@ -15,14 +15,13 @@ function App() {
     
       <div className="App">
           <Particles/>
-          <Navbar/>
-        
+          <Navbar/>     
           <Home/>
           <About/>
           <Skills/>
           <Projects/>
           <Contact/>
-       
+         
       
       </div>
  
