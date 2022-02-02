@@ -46,15 +46,11 @@
    }
 
 
-   @media screen and (max-width:768px){
-    .contact{
-      height:100%;
-      
-      
 
-      
-    }
-    .titleContact{
-        margin-bottom:10vh;
+
+  @media (min-width:768px){
+    .contact{
+    
+     width:100%;
     }
   }
